@@ -1,0 +1,28 @@
+2025-05-14 15:55:06 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.root' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.root
+    Value: "INFO  # Set the root logging level to INFO"
+    Origin: class path resource [application.properties] - 48:20
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.INFO  # Set the root logging level to INFO)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+  # File log format
